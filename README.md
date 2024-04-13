@@ -1,28 +1,34 @@
 # ETL
-Realização de ETL com MySQL, Spoon e PowerBI
+## Realização de ETL com MySQL, Spoon e PowerBI
 
-Realização de ETL utilizando ferramentas e processos planejado
+Este projeto envolve a realização de processos ETL utilizando ferramentas planejadas para a análise de dados.
 
-Primeiramente foi analisado o banco de dados relacional no qual seria analisado a tabela vendas para ter como principal medida para o novo modelo dimensional o valor de venda total
+### Análise Inicial
+Inicialmente, analisamos o banco de dados relacional MySQL, focando especificamente na tabela `vendas`. O principal indicador para o novo modelo dimensional foi o `valor de venda total`.
 
-Usando  ferramneta de Administração de Banco de dados Heide Sql e acessado de forma local o banco de dados MySQL, foi realizado todo o proceso passo a passo para analisar as tabelas
-![image](https://github.com/CarlosJuncher03/ETL/assets/145303814/4abeb779-37c1-44e7-8820-6268afd42a4e)
+Utilizamos a ferramenta de administração de banco de dados, HeidiSQL, para acessar o MySQL localmente e analisar as tabelas.
 
-Após definir de forma pratica qual seria a médida a ser analisada completamente e as dimensões que serão os grãos de filtragem dos dados, foi realiado a modelagem do banco de dados dimensional utilizando a ferramenta BRMODELO
-![Modelagem](https://github.com/CarlosJuncher03/ETL/assets/145303814/f6b0f842-6f29-47c6-97e3-d41f1ae4d3b9)
+![Análise de Tabelas](https://github.com/CarlosJuncher03/ETL/assets/145303814/4abeb779-37c1-44e7-8820-6268afd42a4e)
 
-Após isso foi realizado a geração do script e criado o modelo dimensional no MySQL
-![image](https://github.com/CarlosJuncher03/ETL/assets/145303814/fdb291ac-0931-46f6-8164-1e6350c2bddd)
+### Modelagem Dimensional
+Definidas as medidas e dimensões para análise, realizamos a modelagem do banco de dados dimensional usando a ferramenta BRMODELO.
 
-Extração e Tranformação
+![Modelagem Dimensional](https://github.com/CarlosJuncher03/ETL/assets/145303814/f6b0f842-6f29-47c6-97e3-d41f1ae4d3b9)
 
-Coom a criação do banco de dados realizada com sucesso, iniciou o processo de extração e tranformação dos dados na ferramenta Pentaho. Onde foi realizado o processo de seleção da tabela e criação e transformações da tabela fato, dimensão tempo, dimensão cliente, dimensão vendedor e diensão local
-![image](https://github.com/CarlosJuncher03/ETL/assets/145303814/0b143506-a049-4c5c-a5fa-f7d9ca96b1c9)
+### Scripting e Criação do Modelo Dimensional
+Após a modelagem, geramos scripts e criamos o modelo dimensional diretamente no MySQL.
 
-Leitura
+![Criação do Modelo no MySQL](https://github.com/CarlosJuncher03/ETL/assets/145303814/fdb291ac-0931-46f6-8164-1e6350c2bddd)
 
-Após a inserção dos dados no relatorio dimensional, foi utlizado o PowerBi, no qual foi desenvlveido metricas com o dashbord 
-![image](https://github.com/CarlosJuncher03/ETL/assets/145303814/76ffeacf-c327-4ed4-8e4b-a0b0e5ccd85d)
+### Extração e Transformação
+Com o banco de dados preparado, iniciamos o processo de extração e transformação dos dados utilizando o Pentaho. Durante esta fase, selecionamos a tabela principal e realizamos as transformações necessárias para criar a tabela fato, bem como as dimensões de tempo, cliente, vendedor e localização.
 
-Finalizaçao
-Todos os arquivos desse processo são encontrados nesse diretorio
+![Extração e Transformação no Pentaho](https://github.com/CarlosJuncher03/ETL/assets/145303814/0b143506-a049-4c5c-a5fa-f7d9ca96b1c9)
+
+### Visualização dos Dados
+Os dados transformados foram então utilizados para alimentar dashboards no PowerBI, onde desenvolvemos métricas relevantes para análise.
+
+![Dashboard no PowerBI](https://github.com/CarlosJuncher03/ETL/assets/145303814/76ffeacf-c327-4ed4-8e4b-a0b0e5ccd85d)
+
+### Conclusão
+Todos os arquivos e scripts utilizados neste processo estão disponíveis neste diretório.
