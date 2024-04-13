@@ -28,7 +28,7 @@ Com o banco de dados preparado, iniciamos o processo de extração e transforma�
 ### Visualização dos Dados
 Os dados transformados foram então utilizados para alimentar dashboards no PowerBI, onde desenvolvemos métricas relevantes para análise.
 
-![Dashboard no PowerBI](https://github.com/CarlosJuncher03/ETL/assets/145303814/76ffeacf-c327-4ed4-8e4b-a0b0e5ccd85d)
+![Dashboard no PowerBI](https://github.com/CarlosJuncher03/ETL/assets/145303814/59661a51-9217-4dbd-98e6-6fb35ef2ce4b)
 
 ### Conclusão
 Todos os arquivos e scripts utilizados neste processo estão disponíveis neste diretório.
